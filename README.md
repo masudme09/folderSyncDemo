@@ -1,6 +1,5 @@
-# folderSyncDemo
+# FolderSync
 Windows service project to sync operation and permission management. 
 
-This project has been done to sync between two Windows directories. As new files arrived into one directory and that directory is not acccessible for all the users due to security issues, I had to built this tool to sync that directory with another accessible one. 
-
-So basically, this is a windows service that runs on background and checkany changes on the targetted directory. If chnaged then just do the same stuff with the directory that needs to be updated. It only copies or delete files that is changed not just delete all and copy. 
+The purpose of this project is to implement a Windows service for synchronizing the operations and permission management between two directories. Due to security concerns, one of the directories is inaccessible to certain users, which necessitated the development of this tool to facilitate synchronization between the two.
+Essentially, the service runs in the background and continuously monitors the targeted directory for any modifications. When a change is detected, the tool applies the same operation to the directory that requires updating. Rather than performing a complete deletion and copy of all files, the tool selectively copies or deletes only the files that have been modified. 
